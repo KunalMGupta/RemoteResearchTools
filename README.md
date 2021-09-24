@@ -8,12 +8,12 @@
 4. Since we made a custom ssh key, we would have to append this to ```~/.ssh/config/```. If it is not currently there then create a new one! ```vim ~/.ssh/config/```
 5. Add the following to the config file. 
     ```Host github.com \
-  HostName github.com \
-  User git \
-  Port 22 \
-  PreferredAuthentications publickey \
-  IdentityFile /Users/kunal/.ssh/github \
-  IdentitiesOnly yes```
+      HostName github.com \
+      User git \
+      Port 22 \
+      PreferredAuthentications publickey \
+      IdentityFile /Users/kunal/.ssh/github \
+      IdentitiesOnly yes```
   
   6. 
   
