@@ -24,3 +24,10 @@
      ```cd RemoteResearchTools``` and ```git remote set-url origin git@github.com:KunalMGupta/RemoteResearchTools.git``` 
 5. Now you can do your usual add/commit/push to remote. Enjoy!
   
+## Useful Github commands
+1. To see the log of all commits: ```git log```
+2. To see the files that are currently being tracked ```git ls-tree -r master --name-only```
+3. To push files ```git push origin main```
+4. Set email ```git config --global user.email k5gupta@eng.ucsd.edu```
+5. Set username ```git config --global user.name KunalMGupta```
+6. 
