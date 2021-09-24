@@ -21,6 +21,6 @@
 1. Create a new repository on your git account. Then git clone it to your machine. 
 3. Add username to git ```git config --global user.name "KunalMGupta"```
 4. In your folder, add the remote. For instance, for this repo you will do the following. 
-     ```cd BaseDockerImages``` and ```git remote set-url origin git@github.com:KunalMGupta/BaseDockerImages.git``` 
+     ```cd RemoteResearchTools``` and ```git remote set-url origin git@github.com:KunalMGupta/RemoteResearchTools.git``` 
 5. Now you can do your usual add/commit/push to remote. Enjoy!
   
