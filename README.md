@@ -30,4 +30,11 @@
 3. To push files ```git push origin main```
 4. Set email ```git config --global user.email k5gupta@eng.ucsd.edu```
 5. Set username ```git config --global user.name KunalMGupta```
-6. 
+
+
+## Having a GUI access to remote server. 
+I have found that a combinatino of nomachine and teamviewer works out quite well for this. The catch is that Teamviewer generally gives much better bandwidth compared to nomachine, however I couldn't get to start from ssh terminal itself, luckily this issue is not with nomachine. So, the trick is to first use nomachine to launch teamviewer (only if it not running automatically). Once the teamviewer is active, we can simply use that. 
+
+1. Install nomachine on both your machine (client) and linux server (host). For downloading instructions look here for <a href="https://www.nomachine.com/download/download&id=7"> Mac OS</a> and <a href="https://knowledgebase.nomachine.com/AR01L00775">Linux </a>. Also, I recommend first downloading both of these to your local machine and then scp the linux installer to the server. 
+2. No machine will automatically get activated after the installation. Connect to server via your username and password (using nomachine). 
+3. Once in, you can simply connect using teamviewer and close nomachine later on. 
