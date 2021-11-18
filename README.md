@@ -38,3 +38,6 @@ I have found that a combinatino of nomachine and teamviewer works out quite well
 1. Install nomachine on both your machine (client) and linux server (host). For downloading instructions look here for <a href="https://www.nomachine.com/download/download&id=7"> Mac OS</a> and <a href="https://knowledgebase.nomachine.com/AR01L00775">Linux </a>. Also, I recommend first downloading both of these to your local machine and then scp the linux installer to the server. 
 2. No machine will automatically get activated after the installation. Connect to server via your username and password (using nomachine). 
 3. Once in, you can simply connect using teamviewer and close nomachine later on. 
+
+## Mounting Remote dirs on local machine (Mac OS)
+Sometimes it is handy to be able to use finder to quickly parse through the directories on your remote machine. For this we use <a href="https://cyberduck.io"> Cyberduck </a> applications that relies on SFTP and is super easy to set up and is free (but I encourage donating if you like it!). 
