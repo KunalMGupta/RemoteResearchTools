@@ -41,3 +41,23 @@ I have found that a combinatino of nomachine and teamviewer works out quite well
 
 ## Mounting Remote dirs on local machine (Mac OS)
 Sometimes it is handy to be able to use finder to quickly parse through the directories on your remote machine. For this we use <a href="https://cyberduck.io"> Cyberduck </a> applications that relies on SFTP and is super easy to set up and is free (but I encourage donating if you like it!). 
+
+## Backing up data to GDrive.(from linux server)
+On several occasions there is a need to upload data from the servers to a place where it can be shared more easily with others. I found that using <a href="https://rclone.org/drive/"> rclone </a> to be a great tool to achieve this. To back up some file ```backup.zip``` to your GDrive, do the following. 
+
+1. First install rclone on your linux server ```apt install rclone```
+2. Then config your Google account with rclone using ```rclone config```
+3. Give some name say ```drive``` to refer to the remote location
+4. Since we are using GDrive, type ```drive``` next
+5. Leave blank for Client Id and Secret
+6. Since we don't have access to a monitor on the remote server, type ```n``` here to get an external signup link
+7. Sign in using the generated link on your local machine and copy paste the generated key under ```Enter verification code```
+8. Type ```y``` to verify if the token is correct. and then hit Quit ```q```
+
+The destination is now set under rclone config. To list the contents of your GDrive you can use ```rclone lsd <remote name>:```. Now to do fast copy from your local server to GDrive, use the following command. 
+
+```rclone copy backup.zip drive:<target directory in GDrive>/ -v --drive-chunk-size=512M ```
+
+Here, the ```-v``` flag will tell you things like progress and ETA and the ```--drive-chunk``` is crucial to make this run fast, however, in my experience any value above 128 doesn't help much since the uploading is happening over commodity internet, which isn't that great, but you can always use multiple threads to speed things up. I use k8s so I end up using multiple jobs to run the upload which makes this process fast!
+
+
