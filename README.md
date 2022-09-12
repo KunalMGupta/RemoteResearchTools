@@ -60,4 +60,7 @@ The destination is now set under rclone config. To list the contents of your GDr
 
 Here, the ```-v``` flag will tell you things like progress and ETA and the ```--drive-chunk``` is crucial to make this run fast, however, in my experience any value above 128 doesn't help much since the uploading is happening over commodity internet, which isn't that great, but you can always use multiple threads to speed things up. I use k8s so I end up using multiple jobs to run the upload which makes this process fast!
 
+## Setting VS Code with Docker and remote SSH. 
+
+https://medium.com/@minkesh.asati/development-with-the-docker-on-the-remote-server-via-ssh-from-vs-code-ef9e0f2fcbe6
 
