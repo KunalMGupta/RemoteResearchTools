@@ -63,4 +63,4 @@ Here, the ```-v``` flag will tell you things like progress and ETA and the ```--
 ## Setting VS Code with Docker and remote SSH. 
 
 https://medium.com/@minkesh.asati/development-with-the-docker-on-the-remote-server-via-ssh-from-vs-code-ef9e0f2fcbe6
-
+https://github.com/docker/for-mac/issues/770#issuecomment-252560286
