@@ -43,6 +43,9 @@ I have found that a combinatino of nomachine and teamviewer works out quite well
 Sometimes it is handy to be able to use finder to quickly parse through the directories on your remote machine. For this we use <a href="https://cyberduck.io"> Cyberduck </a> applications that relies on SFTP and is super easy to set up and is free (but I encourage donating if you like it!). 
 
 ## Backing up data to GDrive.(from linux server)
+
+Note: Lately the method for authentication has changed. Use the latest rclone which will ask you to open authentication on a system with access to web browser. 
+```sudo -v ; curl https://rclone.org/install.sh | sudo bash```
 On several occasions there is a need to upload data from the servers to a place where it can be shared more easily with others. I found that using <a href="https://rclone.org/drive/"> rclone </a> to be a great tool to achieve this. To back up some file ```backup.zip``` to your GDrive, do the following. 
 
 1. First install rclone on your linux server ```apt install rclone```
